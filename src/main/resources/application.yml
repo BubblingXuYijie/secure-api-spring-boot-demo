@@ -1,0 +1,22 @@
+# 当自定义了 SecureApiConfig 时，这里的配置全部不生效
+secure-api:
+  enabled: false
+  show-log: true
+  url-safe: true
+  mode: common
+  cipher-algorithm: rsa_ecb_sha256
+  session-key-cipher-algorithm: aes_ecb_pkcs5
+  key:
+  iv:
+  public-key:
+  private-key:
+  encrypt-url:
+    include-urls: /**
+    exclude-urls: /test,/test2
+  decrypt-url:
+    include-urls: /**
+    exclude-urls:
+  date-format: yyyy-MM-dd HH:mm:ss
+  local-date-time-format: yyyy-MM-dd HH:mm:ss
+  local-date-format: yyyy-MM-dd
+  local-time-format: HH:mm:ss
